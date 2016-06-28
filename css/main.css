@@ -1,0 +1,401 @@
+/**********************************
+GENERAL
+***********************************/
+
+* {
+  margin: 0;
+}
+
+html {
+    background-color: #50759F;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#wrapper {
+  max-width       : 940px;
+  margin          : 0 auto;
+  padding         : 30px 2% 0;
+  font-size       : 1.1em;
+  background-color: #f9f9f9;
+}
+
+#header-wrapper {
+  max-width: 1035px;
+  margin   : 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin     : 0 0 1em 0;
+  font-family: 'Raleway', sans-serif;
+  color      : #50759f;
+  font-weight: 800;
+  font-size  : 1.25em;
+}
+
+.half {
+  float  : none;
+  width  : 95%;
+  margin : 2.5%;
+  padding: 1px;
+
+}
+
+.third {
+  float  : none;
+  width  : 95%;
+  margin : 2.5%;
+  padding: 1px;
+
+}
+
+.clear {
+  clear: both;
+
+}
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  margin : 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width  : 100%;
+}
+
+#logo {
+  margin : 0 auto;
+  width  : 229px;
+  display: block;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  margin     : 5px 0 10px;
+  font-size  : 1.75em;
+  font-weight: 800;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size  : 0.75em;
+  margin     : -5px 0 0;
+  font-weight: normal;
+  display    : block;
+  width      : 227px;
+}
+
+nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+#logoicon {
+  float    : left;
+  color    : white;
+  font-size: 3em;
+  padding  : 0 7px 4px 11px;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding   : 10px 0;
+  margin    : 10px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin    : 0 10px;
+  padding   : 0;
+  }
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight   : 600;
+  padding       : 15px 10px;
+  font-size     : 1em;
+  letter-spacing: 1px;
+  font-family   : 'Raleway', sans-serif;
+}
+
+
+
+/**********************************
+ADD
+***********************************/
+
+
+
+#top_add {
+  text-align    : center;
+  width         : 100%;
+  padding-bottom: 2em;
+}
+
+#bottom_add {
+    text-align    : center;
+    width         : 100%;
+    padding-bottom: 2em;
+    padding-top   : 1em;
+ }
+
+
+/**********************************
+DATEPICKER
+***********************************/
+
+#datepicker {
+  width : 308px;
+  margin: 0 auto 20px;
+
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border    : 1px solid #50759f!important;
+  background: #5d8abd!important;
+
+}
+
+
+
+
+
+/**********************************
+FOOTER
+***********************************/
+
+
+
+footer {
+  font-size       : 0.75em;
+  text-align      : center;
+  color           : #ddd;
+  background-color: #50759f;
+}
+
+.footer-wrapper {
+  max-width: 940px;
+  margin   : 0 auto;
+}
+
+
+.footer h4 {
+  font-size     : 16px;
+  text-transform: uppercase;
+  margin        : 16px 0 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding   : 0 20px;
+}
+
+.footer li {
+  font-size: 1.3em;
+  padding  : 5px;
+  margin   : 0 auto;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.footer a {
+  color: #ddd;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+
+
+/**********************************
+PAGE: STARTSEITE
+***********************************/
+
+#langeoog {
+  margin-bottom: 50px;
+}
+
+.weitere_abfahrten {
+  display         : block;
+  text-align      : center;
+  width           : 200px;
+  margin          : 10px auto 0;
+  background-color: #5d8abd;
+  border          : 1px solid #50759f;
+  color           : #fff;
+  padding         : 4px;
+  border-radius   : 2px;
+}
+.weitere_abfahrten:hover{
+  background-color: #50759f;
+  
+}
+
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  display      : block;
+  max-width    : 150px;
+  margin       : 0 auto 30px;
+  border-radius: 100%;
+  }
+
+
+
+/**********************************
+PAGE: Fahrplan
+***********************************/
+
+.center {
+
+  text-align: center;
+
+}
+
+
+.fahrplan {
+  margin       : 0 auto;
+  width        : 350px;
+  list-style   : none;
+  padding      : 4px;
+  max-width    : 90%;
+  border       : 1px solid #dddddd;
+  border-radius: 3px;
+  color        : #454545;
+}
+
+.fahrplan h3 {
+  background-color: #EAEAEA;
+  margin          : 0;
+  line-height     : 1.8em;
+  color           : #333333;
+  border-radius   : 3px;
+  border          : 1px solid #dddddd;
+  font-family     : 'Open-Sans', sans-serif;
+  font-size       : 1.17em;
+  font-weight     : 400;
+}
+
+
+.fahrplan li:nth-child(odd){
+  background-color: #EAEAEA;
+}
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding   : 0;
+  margin    : 0;
+  font-size : 0.9em;
+}
+
+.contact-info a {
+  display          : block;
+  min-height       : 20px;
+  background-repeat: no-repeat;
+  background-size  : 20px 20px;
+  padding          : 0 0 0 30px;
+  margin           : 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color           : #999;
+}
+
+/* blue header */
+header {
+  background  : #5d8abd;
+  border-color: #50759f;
+}
+
+/* nav background on mobile */
+nav {
+  background: #50759f;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links */
+a {
+  color: #5d8abd;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color      : #fff;
+  border-top : solid 3px #fff;
+  padding-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

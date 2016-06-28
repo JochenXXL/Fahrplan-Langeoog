@@ -1,0 +1,5 @@
+AuthUserFile /www/htdocs/w00f0ef0/fpl/usage/.htpasswd
+AuthGroupFile /dev/null
+AuthName 'ByPassword'
+AuthType Basic
+require valid-user
