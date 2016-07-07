@@ -42,7 +42,7 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Linie</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Bensersiel</a>
-                <a class=<?php if($site_title == 'Fahrplan Langeoog'){echo '"dropdown-item active';}?>" href="#">Langeoog</a>
+                <a <?php if(strstr($site_title, "Fahrplan Langeoog")){echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="#">Langeoog</a>
                 <a class="dropdown-item" href="#">Preise</a>
               </div>
             </li>
