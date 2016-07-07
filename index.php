@@ -1,4 +1,3 @@
-    <!-- Site Title, Description and Includes -->
     <?php
       $site_title = "Fahrplan Langeoog | Abfahrtszeiten Fähre Langeoog";
       $site_description = "Fahrplan Langeoog - einfach und schnell die Abfahrtszeiten der Fähre Langeoog und Fähre Bensersiel erfahren.";
