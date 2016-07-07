@@ -29,6 +29,9 @@
 			Fritz Reuter Straße 11<br />
 			26465 Langeoog</p>
 
+			<h4> Bildnachweise </h4>
+			Startseite Fähre: By Ein Dahmer (Own work) [<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3ALANGEOOG_III_5275.jpg">via Wikimedia Commons</a>
+
       </section>
 <?php
   include("inc/footer.php");

@@ -106,7 +106,7 @@ function adsense_top(){
 
 function adsense_bottom(){
     echo '
-    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Fahrplan Langeoog Buttom -->
     <ins class="adsbygoogle"
     style="display:block"
@@ -117,6 +117,24 @@ function adsense_bottom(){
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>';
+}
+
+function adsense_right(){
+    echo '
+    
+    <!-- Fahrplan Langeoog Rechts -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;
+         width:300px;
+         height:600px"
+         data-ad-client="ca-pub-8741291600421705"
+         data-ad-slot="7339063787">
+    </ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    ';
 }
 
 ?>

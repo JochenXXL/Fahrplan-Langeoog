@@ -11,10 +11,10 @@ class fahrplan {
 		$tag = date("w", strtotime($datum));
 
 		?>
-		<ul class="fahrplan">
-              <th> 	<h3 class="center">
+		<table class="table table-bordered table-striped">
+              <th> 	<h4 class="text-xs-center">
                   		<?php echo $datum; ?> 
-                  	</h3> 
+                  	</h4> 
               </th>
         <?php
 
@@ -23,11 +23,11 @@ class fahrplan {
                        in_date_range($fahrt["datum_von"], $fahrt["datum_bis"],$datum) &&
                        !faehrt_nicht($fahrt["faehrt_nicht"], $datum)){     
                     
-                        echo "<tr> <li class='center'>" . $fahrt["zeit"] . "</li> </tr>";           
+                        echo "<tr> <td class='text-xs-center'>" . $fahrt["zeit"] . "</td> </tr>";           
         			}   
        	} 
        	?>
-       	</ul>
+       	</table>
        	<?php           
             
 	}	

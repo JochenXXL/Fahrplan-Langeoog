@@ -1,136 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <!-- Site Title, Description and Includes -->
+    <?php
+      $site_title = "Fahrplan Langeoog | Abfahrtszeiten Fähre Langeoog";
+      $site_description = "Fahrplan Langeoog - einfach und schnell die Abfahrtszeiten der Fähre Langeoog und Fähre Bensersiel erfahren.";
 
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      include("inc/header.php");
+      include("inc/functions.php");
+      include("inc/fahrplan.php");
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>     
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Linie <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Langeoog</a></li>
-                  <li><a href="#">Bensersiel</a></li>
-                  <li><a href="#">Preise</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Charter</a></li>
-              <li><a href="#">Ausflüge</a></li>
-              <li><a href="#">My-Langeoog</a></li>      
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-
-    <div class="container">
+      date_default_timezone_set("Europe/Berlin");
+      $datum = date("d.m.Y");
+      $tag   = date("w", strtotime($datum));
+    ?>
+        
+    <!-- Bild Startseite -->
+    <div class="jumbotron" id="jumbostart">
+      <div class="container">
+      </div>
+    </div>
+    
+    <div class="container" id="main-content">
       <div class="row">
 
-      <!-- END HEADER -->
+      <!-- Grid Startseite -->
 
-        <!-- Bild Startseite -->
-        <div class="jumbotron">
-          <h1>Bild der Fähre</h1>
-          <p>Abfahrtszeiten der Fähre Langeoog</p>
-        </div>
+      <!-- Content -->
+        <div class="col col-sm-8">
 
-        <!-- Grid Startseite -->
-
-        <!-- Content -->
-        <div class="col col-sm-9">
-        
-        <div class="row">
-          <h2 class="text-center"> Top ADD </h2>
-        </div>
-
-        <h1 class="text-center">Aktuelle Abfahrtszeiten ( Linie )</h1>
-        <div class="row">
-          <div class="well col col-sm-10 col-sm-offset-1">
-            <div class="col col-sm-6">
-              Fahrplan Langeoog
+        <h1 class="text-xs-center m-t-1 m-b-2">Aktuelle Abfahrtszeiten ( Linie )</h1>
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title text-xs-center">ab Langeoog</h3>
+                <p class="card-text">
+                  <?php 
+                    $fahrplan = new fahrplan();
+                    $fahrplan->fahrplan_html("Langeoog", $datum);
+                  ?>
+                </p>
+                <a href="langeoog.php" class="text-xs-center btn btn-primary">Weitere Abfahrten</a>              
+              </div>
             </div>
-            <div class="col col-sm-6">
-              Fahrplan Bensersiel
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title text-xs-center">ab Bensersiel</h3>
+                <p class="card-text">
+                  <?php 
+                    $fahrplan = new fahrplan();
+                    $fahrplan->fahrplan_html("Bensersiel", $datum);
+                  ?>
+                </p>                 
+                <a href="bensersiel.php" class="btn btn-primary">Weitere Abfahrten</a>                        
+              </div>              
             </div>
           </div>
         </div>
-        <div class="alert alert-info col col-sm-10 col-sm-offset-1" role="alert">
-          Achtung, alle Angaben sind ohne Gewähr!!!!
+
+        <div class="alert alert-info col col-sm-10 col-sm-offset-1 m-t-2 m-b-3" role="alert">
+          <?php include("inc/fahrplan_hinweis.php") ?>
         </div>
 
-        <h1 class="text-center">Charterfahrten</h1>
-        <div class="row">
-          <div class="well col col-sm-10 col-sm-offset-1">
-            Infotext
+        <h1 class="text-xs-center m-t-2 m-b-1">Charterfahrten</h1>               
+        <div class="card-deck-wrapper ">
+          <div class="card-deck">
+            <div class="col col-md-6">
+              <div class="card">
+                <img class="card-img-top" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
+                <div class="card-block">
+                  <h4 class="card-title">Reederei Freimuth</h4>
+                  <p class="card-text">Langeoog Bensersiel 240€ für 12 Personen usw</p>
+                  <div class="center">
+                    <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-6">
+              <div class="card">
+                <img class="card-img-top" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
+                <div class="card-block">
+                  <h4 class="card-title">Reederei Damwerth</h4>
+                  <p class="card-text">Hochzeitsfahrten usw und so fort</p>
+                  <div class="center">
+                    <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+
+        <h1 class="text-xs-center m-t-3 m-b-1">Ausflüge</h1>
+        <div class="row m-b-2">
+          <div class="well col col-sm-10 col-sm-offset-1">            
+            <table class="table table-striped">
+              <thead>
+                <tr class="table-striped">
+                  <th>Titel</th>
+                  <th>Datum</th>
+                  <th>Zeit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Seeehundsfahrt</th>
+                  <td>23.07.16</td>
+                  <td>13:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
-        <h1 class="text-center">Ausflugsfahrten</h1>
         <div class="row">
-          <div class="well col col-sm-10 col-sm-offset-1">
-            Infotext
-          </div>
+          <?php adsense_bottom(); ?>
         </div>
 
-         <div class="row">
-          <h2 class="text-center"> Bottom ADD </h2>
-        </div>
+      </div>
 
+      <!-- END Content -->
 
-        </div>
-        <!-- END Content -->
-
-        <!-- Add rechts -->
-        <div class="col col-sm-3">
-          ADD
-        </div>
-        <!-- END Add rechts -->
-
-
-
-
+      <!-- Add rechts -->
+      <div class="col col-sm-4 m-t-3">
+        <?php adsense_right(); ?>
+       
+      </div>
+      <!-- END Add rechts -->
 
       <!-- FOOTER BEGIN -->
-      </div>
+    </div>
+  </div>
+  
 
-    </div> 
-
-    <div class="container-fluid">
-      <div class="row">
-       footer 
-      </div>
-    </div> 
+  <div class="container-fluid">
+    <div class="row">
+     footer 
+    </div>
+  </div> 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <?php  // include_once("inc/analyticstracking.php") ?> 
   </body>
 </html>
