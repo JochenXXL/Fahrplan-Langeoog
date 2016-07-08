@@ -23,8 +23,14 @@
 
       <!-- Grid Startseite -->
 
+      <!-- Add rechts -->
+      <div class="col col-lg-4 col-lg-push-8 m-t-3">  
+        <?php adsense_right(); ?>
+       
+      </div>
+
       <!-- Content -->
-        <div class="col col-sm-8">
+        <div class="col col-lg-8 col-lg-pull-4">
 
         <h1 class="text-xs-center m-t-1 m-b-2">Aktuelle Abfahrtszeiten ( Linie )</h1>
         <div class="card-deck-wrapper">
@@ -38,7 +44,9 @@
                     $fahrplan->fahrplan_html("Langeoog", $datum);
                   ?>
                 </p>
-                <a href="langeoog.php" class="text-xs-center btn btn-primary">Weitere Abfahrten</a>              
+                <div class="text-xs-center">
+                  <a href="langeoog.php" class="btn btn-primary">Weitere Abfahrten</a> 
+                </div>             
               </div>
             </div>
             <div class="card">
@@ -49,8 +57,10 @@
                     $fahrplan = new fahrplan();
                     $fahrplan->fahrplan_html("Bensersiel", $datum);
                   ?>
-                </p>                 
-                <a href="bensersiel.php" class="btn btn-primary">Weitere Abfahrten</a>                        
+                </p>
+                <div class="text-xs-center">                 
+                  <a href="bensersiel.php" class="btn btn-primary">Weitere Abfahrten</a>
+                </div>                        
               </div>              
             </div>
           </div>
@@ -63,13 +73,13 @@
         <h1 class="text-xs-center m-t-2 m-b-1">Charterfahrten</h1>               
         <div class="card-deck-wrapper ">
           <div class="card-deck">
-            <div class="col col-md-6">
+            <div class="col col-md-6 m-b-2">
               <div class="card">
-                <img class="card-img-top" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
+                <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
                   <h4 class="card-title">Reederei Freimuth</h4>
                   <p class="card-text">Langeoog Bensersiel 240€ für 12 Personen usw</p>
-                  <div class="center">
+                  <div class="text-xs-center">
                     <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
                 </div>
@@ -77,11 +87,11 @@
             </div>
             <div class="col col-md-6">
               <div class="card">
-                <img class="card-img-top" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
+                <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
                   <h4 class="card-title">Reederei Damwerth</h4>
-                  <p class="card-text">Hochzeitsfahrten usw und so fort</p>
-                  <div class="center">
+                  <p class="card-text">Hochzeitsfahrten usw und so fort sdfsdfsd sef sdf sd sdfsd f sfe</p>
+                  <div class="text-xs-center">
                     <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
                 </div>
@@ -130,11 +140,6 @@
 
       <!-- END Content -->
 
-      <!-- Add rechts -->
-      <div class="col col-sm-4 m-t-3">
-        <?php adsense_right(); ?>
-       
-      </div>
       <!-- END Add rechts -->
     </div>
   </div>

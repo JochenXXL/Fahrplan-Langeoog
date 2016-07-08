@@ -6,6 +6,10 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  color: #003869;
+}
+
 #main-content {
 	background-color: #f9f9f9;
 }
@@ -48,6 +52,12 @@ body{
   .navbar-nav .nav-link + .nav-link {
     margin-left: 1rem;
   }
+}
+
+/* TABLES */
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(147, 180, 208);
 }
 
 

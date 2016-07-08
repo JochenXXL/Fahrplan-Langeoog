@@ -123,8 +123,8 @@ function adsense_right(){
     echo '
     
     <!-- Fahrplan Langeoog Rechts -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;
+    <ins class="adsbygoogle center-block"
+         style="display:block;
          width:300px;
          height:600px"
          data-ad-client="ca-pub-8741291600421705"
