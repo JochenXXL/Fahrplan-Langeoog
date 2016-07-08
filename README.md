@@ -6,6 +6,6 @@
 Basic Site just built with php, jquery and Bootstrap 4 alpha
 
 ###Roadmap
--Api for timetable usage
--database to store arrivals and departures
--include Bensersiel bus timetable
+* Api for timetable usage
+* database to store arrivals and departures
+* include Bensersiel bus timetable
