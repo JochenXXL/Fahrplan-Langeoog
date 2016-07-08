@@ -18,15 +18,16 @@
       </div>
     </div>
     
-    <div class="container" id="main-content">
+    <div class="container m-b-2" id="main-content">
       <div class="row">
 
       <!-- Grid Startseite -->
 
       <!-- Add rechts -->
-      <div class="col col-lg-4 col-lg-push-8 m-t-3">  
-        <?php adsense_right(); ?>
-       
+      <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2">  
+        <div id="right-ad">
+          <?php adsense_right(); ?>      
+        </div> 
       </div>
 
       <!-- Content -->
