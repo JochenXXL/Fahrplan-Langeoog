@@ -26,6 +26,11 @@ h1 {
 }
 
 /* Responsive Navbar Update */
+
+.navbar {
+  background-color: #00325d;
+}
+
 .navbar-brand {
   float: none;
 }
@@ -63,7 +68,7 @@ h1 {
 /* Footer */
 
 #footer {
-  background-color: white;
+  background-color: #00182d;
 }
 
 

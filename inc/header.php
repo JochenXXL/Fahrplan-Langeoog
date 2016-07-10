@@ -30,7 +30,7 @@
     <?php include_once("inc/analyticstracking.php") ?>
 
     <!-- Navigation -->    
-    <nav class="navbar navbar-dark navbar-fixed-top bg-primary">
+    <nav class="navbar navbar-dark navbar-fixed-top">
       <div class="container">
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
           &#9776;
@@ -39,7 +39,7 @@
           <a class="navbar-brand" href="#">LOGO</a>
           <ul class="nav navbar-nav pull-sm-right">
             <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Linie</a>
+              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Linie</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Bensersiel</a>
                 <a <?php if(strstr($site_title, "Fahrplan Langeoog")){echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="#">Langeoog</a>

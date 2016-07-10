@@ -17,6 +17,15 @@
       <div class="container">
       </div>
     </div>
+
+    <!-- Add Top -->
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-12 center-block m-b-2">
+        <?php adsense_top(); ?>
+      </div>  
+    </div>
+  </div>
     
     <div class="container m-b-2" id="main-content">
       <div class="row">
@@ -67,7 +76,7 @@
           </div>
         </div>
 
-        <div class="alert alert-info col col-sm-10 col-sm-offset-1 m-t-2 m-b-3" role="alert">
+        <div class="alert alert-info m-t-2 m-b-3" role="alert">
           <?php include("inc/fahrplan_hinweis.php") ?>
         </div>
 
@@ -79,7 +88,7 @@
                 <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
                   <h4 class="card-title">Reederei Freimuth</h4>
-                  <p class="card-text">Langeoog Bensersiel 240€ für 12 Personen usw</p>
+                  <p class="card-text">Individuelle Ausflugsfahrten sowie Inseltaxi nach Langeoog/Bensersiel (240€/Fahrt) für bis zu zwölf Personen.</p>
                   <div class="text-xs-center">
                     <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
@@ -91,7 +100,7 @@
                 <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
                   <h4 class="card-title">Reederei Damwerth</h4>
-                  <p class="card-text">Hochzeitsfahrten usw und so fort sdfsdfsd sef sdf sd sdfsd f sfe</p>
+                  <p class="card-text">Individuelle Ausflugsfahrten, Inseltaxi nach Langeoog/Bensersiel für bis zu zwölf Personen.</p>
                   <div class="text-xs-center">
                     <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
@@ -133,15 +142,23 @@
           </div>
         </div>
 
-        <div class="row">
-          <?php adsense_bottom(); ?>
-        </div>
+        
 
       </div>
 
       <!-- END Content -->
 
-      <!-- END Add rechts -->
+    </div>
+
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-12 center-block m-b-2">
+        <?php adsense_bottom(); ?>
+      </div>  
     </div>
   </div>
   
