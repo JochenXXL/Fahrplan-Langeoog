@@ -11,7 +11,8 @@
     <title>Fahrplan Langeoog</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+        <script src="jquery/external/jquery/jquery.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,9 +47,9 @@
             <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Linie</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Bensersiel</a>
-                <a <?php if(strstr($site_title, "Fahrplan Langeoog")){echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="#">Langeoog</a>
-                <a class="dropdown-item" href="#">Preise</a>
+                <a <?php if ($site_id == 2) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="langeoog.php">Langeoog</a>
+                <a <?php if ($site_id == 3) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="bensersiel.php">Bensersiel</a>
+                <a <?php if ($site_id == 4) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="preise.php">Preise</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -91,13 +92,13 @@
       <!-- Grid Startseite -->
 
       <!-- Add right -->
-    <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2">  
+    <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2 hidden-md-down">  
       <div id="right-ad">
         <?php adsense_right(); ?>      
       </div> 
 
-      <div id="own-add">
+      <!--<div id="own-add">
       <h3> Tagesaktueller Fahrplan auf Ihrer Webseite?</h3>
       <button class="btn btn-primary"> Kontakt </button>
-      </div>
+      </div>-->
     </div>

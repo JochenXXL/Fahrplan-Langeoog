@@ -19,13 +19,15 @@
       <div class="col col-lg-8 col-lg-pull-4">
 
           <div class="row">
-            <h3 class="text-xs-center">Fahrplan Langeoog</h3>
-            <p class="text-xs-center">Abfahrtszeiten der Fähre Langeoog am <?php echo wochentag($tag) .", den " . $datum ?>.</p>
+            <h1 class="text-xs-center p-y-2">Fahrplan Langeoog</h3>
+            <p class="text-xs-center p-b-1">Abfahrtszeiten der Fähre Langeoog am <?php echo wochentag($tag) .", den " . $datum ?>.</p>
             <div class="col-md-6">
-                <div id="datepicker">
-                    broken datepicker
-                    <?php datepicker_hafen("langeoog", $datum); ?>  
-                </div>
+              <div class="m-x-auto" style="width:270px;">
+                  <div id="datepicker">
+                      <?php datepicker_hafen("langeoog", $datum); ?>  
+                  </div>
+              </div>
+
             </div>
             <div class="col-md-6">
               <?php 
@@ -46,22 +48,4 @@
 
 
 
-    <div id="wrapper">
-        <section>
-          
-            <h3 class="center">Fahrplan Langeoog</h3>
-            <p class="center">Abfahrtszeiten der Fähre Langeoog am <?php echo wochentag($tag) .", den " . $datum ?>.</p>
-            <div class="half">
-                <div id="datepicker">
-                    <?php datepicker_hafen("langeoog", $datum); ?>  
-                </div>
-            </div>
-            <div class="half">
-              <?php 
-                $fahrplan = new fahrplan();
-                $fahrplan->fahrplan_html("Langeoog", $datum);
-              ?>
-            </div>        
-            <?php include("inc/fahrplan_hinweis.php") ?>
 
-        </section>

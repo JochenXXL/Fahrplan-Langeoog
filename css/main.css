@@ -25,6 +25,7 @@ h1 {
   height: 400px;
 }
 
+
 /* Responsive Navbar Update */
 
 .navbar {
@@ -63,6 +64,17 @@ h1 {
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgb(147, 180, 208);
+}
+
+
+.table td{
+    padding: .3rem;
+}
+
+/* Right Add */
+
+#right-ad {
+  margin-top: -20px;
 }
 
 /* Footer */
