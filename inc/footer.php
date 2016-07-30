@@ -1,3 +1,14 @@
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-12 center-block m-b-2">
+        <?php adsense_bottom(); ?>
+      </div>  
+    </div>
+  </div>
+	
 	<!-- FOOTER BEGIN -->
   <div class="container-fluid p-t-2" id="footer">
   	<div class="container">

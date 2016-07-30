@@ -23,11 +23,14 @@
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
     <!-- End Cookie Consent plugin -->
+    <?php include_once("inc/functions.php"); ?>
 
   </head>
   <body> 
     <!-- Google Analytics Tracking Code -->  
     <?php include_once("inc/analyticstracking.php") ?>
+
+
 
     <!-- Navigation -->    
     <nav class="navbar navbar-dark navbar-fixed-top">
@@ -64,3 +67,35 @@
         </div>
       </div>
     </nav>
+
+    <!-- Bild Startseite -->
+    <div class="jumbotron" id="jumbostart">
+      <div class="container">
+      </div>
+    </div>
+
+     <!-- Add Top -->
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 center-block m-b-2">
+          <?php adsense_top(); ?>
+        </div>  
+      </div>
+    </div>
+      
+    <div class="container m-b-2" id="main-content">
+      <div class="row">
+
+      <!-- Grid Startseite -->
+
+      <!-- Add right -->
+    <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2">  
+      <div id="right-ad">
+        <?php adsense_right(); ?>      
+      </div> 
+
+      <div id="own-add">
+      <h3> Tagesaktueller Fahrplan auf Ihrer Webseite?</h3>
+      <button class="btn btn-primary"> Kontakt </button>
+      </div>
+    </div>

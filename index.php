@@ -1,9 +1,9 @@
     <?php
       $site_title = "Fahrplan Langeoog | Abfahrtszeiten Fähre Langeoog";
+      $site_id = 1;
       $site_description = "Fahrplan Langeoog - einfach und schnell die Abfahrtszeiten der Fähre Langeoog und Fähre Bensersiel erfahren.";
 
       include("inc/header.php");
-      include("inc/functions.php");
       include("inc/fahrplan.php");
 
       date_default_timezone_set("Europe/Berlin");
@@ -11,36 +11,8 @@
       $tag   = date("w", strtotime($datum));
     ?>
         
-    
-    <!-- Bild Startseite -->
-    <div class="jumbotron" id="jumbostart">
-      <div class="container">
-      </div>
-    </div>
-
-    <!-- Add Top -->
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-12 center-block m-b-2">
-        <?php adsense_top(); ?>
-      </div>  
-    </div>
-  </div>
-    
-    <div class="container m-b-2" id="main-content">
-      <div class="row">
-
-      <!-- Grid Startseite -->
-
-      <!-- Add rechts -->
-      <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2">  
-        <div id="right-ad">
-          <?php adsense_right(); ?>      
-        </div> 
-      </div>
-
       <!-- Content -->
-        <div class="col col-lg-8 col-lg-pull-4">
+      <div class="col col-lg-8 col-lg-pull-4">
 
         <h1 class="text-xs-center m-t-1 m-b-2">Aktuelle Abfahrtszeiten ( Linie )</h1>
         <div class="card-deck-wrapper">
@@ -99,8 +71,8 @@
               <div class="card">
                 <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
-                  <h4 class="card-title">Reederei Damwerth</h4>
-                  <p class="card-text">Individuelle Ausflugsfahrten, Inseltaxi nach Langeoog/Bensersiel für bis zu zwölf Personen.</p>
+                  <h4 class="card-title">MS Flinthörn</h4>
+                  <p class="card-text">Schiffsausflüge und Erlebnisfahrten in familiärer Atmosphäre mit der MS Flinthörn. </p>
                   <div class="text-xs-center">
                     <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
@@ -140,26 +112,9 @@
               </tbody>
             </table>
           </div>
-        </div>
-
-        
-
+        </div> 
       </div>
 
       <!-- END Content -->
 
-    </div>
-
-
-
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-12 center-block m-b-2">
-        <?php adsense_bottom(); ?>
-      </div>  
-    </div>
-  </div>
-  
   <?php include('inc/footer.php') ?>
