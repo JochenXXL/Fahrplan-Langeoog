@@ -134,7 +134,7 @@ function adsense_right(){
     ';
 }
 
-function ausfluege($num){
+function ausfluege($num = NULL){
     $data = file_get_contents("inc/ausflug.json");
     $json = json_decode($data, true);
 

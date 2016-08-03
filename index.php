@@ -63,7 +63,7 @@
                   <h4 class="card-title">Reederei Freimuth</h4>
                   <p class="card-text">Individuelle Ausflugsfahrten sowie Inseltaxi nach Langeoog/Bensersiel (240€/Fahrt) für bis zu zwölf Personen.</p>
                   <div class="text-xs-center">
-                    <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
+                    <a href="reederei-freimuth.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
                 </div>
               </div>
@@ -87,7 +87,7 @@
         <p>Soweit nicht anders angegeben, gelten die Abfahrtszeiten ab Langeoog Bahnhof.</p>
         <div class="row m-b-2">
           <div class="col col-sm-12">  
-            <?php ausfluege(10); ?>          
+            <?php ausfluege(5); ?>          
           </div>
           <div class="text-xs-center">                 
             <a href="ausfluege-langeoog.php" class="btn btn-primary">Weitere Ausflüge</a>

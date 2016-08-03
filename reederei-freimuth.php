@@ -45,7 +45,7 @@
       <dd class="col-sm-9"><a href="http://www.reederei-freimuth.de" target="_blank">http://www.reederei-freimuth.de</a></dd>  
     </dl>
     <div class="alert alert-danger m-b-2" role="alert">
-      Bitte beachten Sie, dass unsere Fahrten mindestens 3 Tage im voraus gebucht werden müssen. Spontane Buchungen sind leider nicht möglich. 
+      Bitte beachten Sie, dass die Fahrten der Reederei Freimuth mindestens 3 Tage im voraus gebucht werden müssen. "Spontane" Buchungen sind leider nicht möglich. 
     </div>
 
   </div>
