@@ -67,7 +67,7 @@
 					</div>
 					<div class="row">
 						<div class="col col-md-6 col-md-offset-3">
-							<a href="http://i-modich.de" class="center-block text-xs-center"> © 2016 I-Modich.de Internetdienstleistungen. </a>
+							<a href="http://i-modich.de" class="center-block text-xs-center p-b-1"> © 2016 I-Modich.de Internetdienstleistungen. </a>
 						</div>
 					</div>
 	      </footer>
@@ -77,11 +77,9 @@
   </div> 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-
     <script src="jquery/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <!-- Google Analytics -->
-    <?php  // include_once("inc/analyticstracking.php") ?> 
+    <?php  //include_once("inc/analyticstracking.php") ?> 
   </body>
 </html>

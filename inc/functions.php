@@ -134,4 +134,39 @@ function adsense_right(){
     ';
 }
 
+function ausfluege($num){
+    $data = file_get_contents("inc/ausflug.json");
+    $json = json_decode($data, true);
+
+    echo '
+         <table class="table table-striped">
+          <thead>
+            <tr class="table-striped">
+              <th>Titel</th>
+              <th>Datum</th>
+              <th>Zeit</th>
+              <th>Ticket</th>
+            </tr>
+          </thead>
+          <tbody>
+    ';
+
+    if (!isset($num)) {
+        $num = count($json) - 1;
+    } 
+
+    for ($i=0; $i < $num; $i++) {
+        if ($json[$i] != NULL) {
+            echo '<tr>';
+            echo '<th scope="row">' . $json[$i]['Titel'] . '</th>';
+            echo '<td>' . $json[$i]['Datum'] . '</th>';
+            echo '<td>' . $json[$i]['Uhrzeit'] . '</th>';
+            echo '<td>' . '<a href="' . $json[$i]['Ticket'] . '" target="_blank" class="btn btn-success btn-sm">Ticket kaufen</a>' . '</th>';
+            echo '</tr>';
+        } 
+    }
+
+    echo '</tbody></table>';
+}
+
 ?>

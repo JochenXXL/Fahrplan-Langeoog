@@ -14,7 +14,8 @@
       <!-- Content -->
       <div class="col col-lg-8 col-lg-pull-4">
 
-        <h1 class="text-xs-center m-t-1 m-b-2">Aktuelle Abfahrtszeiten ( Linie )</h1>
+        <h1 class="text-xs-center p-t-1 p-b-2">Fahrplan Langeoog ( Linie )</h1>
+        <p>Auf Fahrplan-Langeoog.de finden Sie die aktuellen Abfahrtszeiten der Fähre Langeoog, die Abfahrtszeiten für Ausflugsfahrten sowie Informationen zu Charterfahrten von und nach Langeoog. Soweit nicht anders angegeben, gelten die Abfahrtszeiten ab Bensersiel Hafen sowie ab Langeoog Bahnhof. </p>
         <div class="card-deck-wrapper">
           <div class="card-deck">
             <div class="card">
@@ -52,10 +53,10 @@
           <?php include("inc/fahrplan_hinweis.php") ?>
         </div>
 
-        <h1 class="text-xs-center m-t-2 m-b-1">Charterfahrten</h1>               
+        <h2 class="text-xs-center m-t-2 m-b-1">Charterfahrten</h2>               
         <div class="card-deck-wrapper ">
           <div class="card-deck">
-            <div class="col col-md-6 m-b-2">
+            <div class="col col-md-6 col-md-offset-3 m-b-2">
               <div class="card">
                 <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
@@ -67,52 +68,34 @@
                 </div>
               </div>
             </div>
-            <div class="col col-md-6">
+            <!-- <div class="col col-md-6">
               <div class="card">
                 <img class="card-img-top center-block" src="img/Reederei_Freimuth.jpg" alt="Reederei Freimuth">
                 <div class="card-block">
-                  <h4 class="card-title">MS Flinthörn</h4>
+                  <h4 class="card-title">Reederei Damwerth</h4>
                   <p class="card-text">Schiffsausflüge und Erlebnisfahrten in familiärer Atmosphäre mit der MS Flinthörn. </p>
                   <div class="text-xs-center">
                     <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>     
 
-        <h1 class="text-xs-center m-t-3 m-b-1">Ausflüge</h1>
+        <h2 class="text-xs-center m-t-3 m-b-1">Ausflüge</h2>
+        <p>Soweit nicht anders angegeben, gelten die Abfahrtszeiten ab Langeoog Bahnhof.</p>
         <div class="row m-b-2">
-          <div class="well col col-sm-10 col-sm-offset-1">            
-            <table class="table table-striped">
-              <thead>
-                <tr class="table-striped">
-                  <th>Titel</th>
-                  <th>Datum</th>
-                  <th>Zeit</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Seeehundsfahrt</th>
-                  <td>23.07.16</td>
-                  <td>13:00</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col col-sm-12">  
+            <?php ausfluege(10); ?>          
           </div>
+          <div class="text-xs-center">                 
+            <a href="ausfluege-langeoog.php" class="btn btn-primary">Weitere Ausflüge</a>
+          </div> 
+
+          
         </div> 
+
       </div>
 
       <!-- END Content -->

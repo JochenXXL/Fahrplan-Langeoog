@@ -1,7 +1,7 @@
 <?php
-    $site_title = "Reederei Freimuth";
-    $site_id = 5;
-    $site_description = "Langeoog Charter Reederei Freimuth. Inseltaxi und Ausflugsfahrten";
+    $site_title = "Inseltaxi Langeoog";
+    $site_id = 7;
+    $site_description = "Inseltaxi Langeoog";
 
     include("inc/header.php");
 ?>

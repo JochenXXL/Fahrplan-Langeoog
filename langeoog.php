@@ -45,7 +45,3 @@
       <!-- END Content -->
 
   <?php include('inc/footer.php') ?>
-
-
-
-

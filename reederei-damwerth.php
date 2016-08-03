@@ -1,14 +1,14 @@
 <?php
-    $site_title = "Reederei Freimuth";
+    $site_title = "Reederei Damwerth";
     $site_id = 5;
-    $site_description = "Langeoog Charter Reederei Freimuth. Inseltaxi und Ausflugsfahrten";
+    $site_description = "Langeoog Charter Reederei Damwerth. Ausflugs- und Erlebnisfahrten";
 
     include("inc/header.php");
 ?>
 
   <!-- Content -->
   <div class="col col-lg-8 col-lg-pull-4">
-    <h1 class="text-xs-center p-y-2">Reederei Freimuth</h1>
+    <h1 class="text-xs-center p-y-2">Reederei Damwerth</h1>
     
     <div class="jumbotron" id="jumbofreimuth">
       <div class="container">
