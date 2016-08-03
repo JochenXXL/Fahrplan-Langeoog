@@ -390,6 +390,19 @@
 		'faehrt_nicht' => "",
 	);
 
+	// Fähre um 21:30 Sonderfahrt am 13.08.2016
+	$fahrplan[] = array(
+		'zeit' => "21:30",
+		'tag' => array (
+				6
+			),
+		'datum_von' => array(
+						"13.08.2016"),
+		'datum_bis' => array(
+						"13.08.2016"),
+		'faehrt_nicht' => "",
+	);
+
 	// Fähre um 22:00 Sonderfahrt am 23.07.2016
 	$fahrplan[] = array(
 		'zeit' => "22:00",

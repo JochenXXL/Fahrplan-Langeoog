@@ -25,7 +25,7 @@
             <strong>Soweit nicht anders angegeben, gelten die Abfahrtszeiten ab Langeoog Bahnhof!</strong></p>            
         
               <div class="col col-sm-12">  
-                <?php ausfluege(); ?>          
+                <?php ausfluege(); ?>         
               </div>          
 
                   

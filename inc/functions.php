@@ -139,6 +139,7 @@ function ausfluege($num = NULL){
     $json = json_decode($data, true);
 
     echo '
+        <div class="table-responsive">
          <table class="table table-striped">
           <thead>
             <tr class="table-striped">
@@ -166,7 +167,7 @@ function ausfluege($num = NULL){
         } 
     }
 
-    echo '</tbody></table>';
+    echo '</tbody></table></div>';
 }
 
 ?>
