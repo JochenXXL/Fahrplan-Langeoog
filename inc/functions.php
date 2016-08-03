@@ -156,14 +156,19 @@ function ausfluege($num = NULL){
         $num = count($json) - 1;
     } 
 
+
+
     for ($i=0; $i < $num; $i++) {
         if ($json[$i] != NULL) {
-            echo '<tr>';
-            echo '<th scope="row">' . $json[$i]['Titel'] . '</th>';
-            echo '<td>' . $json[$i]['Datum'] . '</th>';
-            echo '<td>' . $json[$i]['Uhrzeit'] . '</th>';
-            echo '<td>' . '<a href="' . $json[$i]['Ticket'] . '" target="_blank" class="btn btn-success btn-sm">Ticket kaufen</a>' . '</th>';
-            echo '</tr>';
+            if ($json[$i]['Datum'] >= date("d.m.Y")) {
+                echo '<tr>';
+                echo '<th scope="row">' . $json[$i]['Titel'] . '</th>';
+                echo '<td>' . $json[$i]['Datum'] . '</th>';
+                echo '<td>' . $json[$i]['Uhrzeit'] . '</th>';
+                echo '<td>' . '<a href="' . $json[$i]['Ticket'] . '" target="_blank" class="btn btn-success btn-sm">Ticket kaufen</a>' . '</th>';
+                echo '</tr>';
+            }
+
         } 
     }
 
