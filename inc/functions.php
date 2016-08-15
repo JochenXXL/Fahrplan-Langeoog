@@ -137,6 +137,13 @@ function adsense_right(){
 function ausfluege($num = NULL){
     $data = file_get_contents("inc/ausflug.json");
     $json = json_decode($data, true);
+    $counter = count($json);
+
+    if (isset($num)) {
+        $numcount = $num;
+    } else {
+        $numcount = $counter;
+    }
 
     echo '
         <div class="table-responsive">
@@ -152,15 +159,10 @@ function ausfluege($num = NULL){
           <tbody>
     ';
 
-    if (!isset($num)) {
-        $num = count($json) - 1;
-    } 
-
-
-
-    for ($i=0; $i < $num; $i++) {
+    for ($i=0; $i < $counter; $i++) {
         if ($json[$i] != NULL) {
-            if ($json[$i]['Datum'] >= date("d.m.Y")) {
+            if ($json[$i]['Datum'] >= date("d.m.Y") && $numcount > 0) {
+                $numcount--;
                 echo '<tr>';
                 echo '<th scope="row">' . $json[$i]['Titel'] . '</th>';
                 echo '<td>' . $json[$i]['Datum'] . '</th>';
