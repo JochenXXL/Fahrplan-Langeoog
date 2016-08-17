@@ -135,6 +135,7 @@ function adsense_right(){
 }
 
 function ausfluege($num = NULL){
+
     $data = file_get_contents("inc/ausflug.json");
     $json = json_decode($data, true);
     $counter = count($json);
@@ -161,7 +162,7 @@ function ausfluege($num = NULL){
 
     for ($i=0; $i < $counter; $i++) {
         if ($json[$i] != NULL) {
-            if ($json[$i]['Datum'] >= date("d.m.Y") && $numcount > 0) {
+            if (strtotime($json[$i]['Datum']) > strtotime(date("d.m.Y")) && $numcount > 0) {
                 $numcount--;
                 echo '<tr>';
                 echo '<th scope="row">' . $json[$i]['Titel'] . '</th>';

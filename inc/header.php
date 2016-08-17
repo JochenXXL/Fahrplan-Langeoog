@@ -88,7 +88,7 @@
       <!-- Grid Startseite -->
 
       <!-- Add right -->
-    <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2 hidden-md-down">  
+    <div class="col col-lg-4 col-lg-push-8 m-t-3 m-b-2 hidden-md-down" id="right-ad-container">  
       <div id="right-ad">
         <?php adsense_right(); ?>      
       </div> 
