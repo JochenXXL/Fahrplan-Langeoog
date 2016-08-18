@@ -10,9 +10,9 @@
     <!--<meta http-equiv="refresh" content="3" >-->
     <title><?php if($site_title != null) {echo $site_description;} else {echo "Fahrplan Langeoog";}?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="jquery/jquery-ui.css">
-        <script src="jquery/external/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="jquery/external/jquery/jquery.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:800|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
