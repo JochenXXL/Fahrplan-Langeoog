@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $site_title ?></title>
+    <title><?php if($site_title != null) {echo $site_title;} else {echo "Fahrplan Langeoog";}?></title>
     <meta name="description" content="<?php if($site_description != null) {echo $site_description;}?>">
     <meta name="author" content="Sven Harder | I-modich.de Internetdienstleistungen">
-    <!--<meta http-equiv="refresh" content="3" >-->
-    <title><?php if($site_title != null) {echo $site_description;} else {echo "Fahrplan Langeoog";}?></title>
+    <!--<meta http-equiv="refresh" content="3" >-->    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="jquery/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
