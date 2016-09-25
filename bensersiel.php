@@ -24,7 +24,7 @@
             <div class="col-md-6">
               <div class="m-x-auto p-b-3" style="width:270px;">
                   <div id="datepicker">
-                      <?php datepicker_hafen("langeoog", $datum); ?>  
+                      <?php datepicker_hafen("bensersiel", $datum); ?>  
                   </div>
               </div>
 
