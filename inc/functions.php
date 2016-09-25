@@ -71,7 +71,7 @@ function datepicker_hafen($hafen, $datum){
               dateFormat: 'dd.mm.yy',
               defaultDate: '" . $datum . "',
               minDate: 0,
-              maxDate: '30.10.2016',
+              maxDate: '17.03.2017',
               firstDay: 1,
               onSelect: function(dateText) {
                 $(this).change();
