@@ -76,6 +76,19 @@
 		'faehrt_nicht' => "",
 	);
 
+	// Fähre um 11:30 SONDERFHART WEIHNACHTEN
+	$fahrplan[] = array(
+		'zeit' => "11:30",
+		'tag' => array (
+				1, 2, 3, 4, 5
+			),
+		'datum_von' => array(
+						"26.12.2016"),
+		'datum_bis' => array(
+						"30.12.2016"),
+		'faehrt_nicht' => "",
+	);
+
 
 	// Fähre um 13:30
 	$fahrplan[] = array(
@@ -100,6 +113,19 @@
 						"31.10.2016"),
 		'datum_bis' => array(
 						"18.03.2017"),
+		'faehrt_nicht' => "",
+	);
+
+	// Fähre um 15:30 SONDERFHART WEIHNACHTEN
+	$fahrplan[] = array(
+		'zeit' => "15:30",
+		'tag' => array (
+				1, 2, 3, 4
+			),
+		'datum_von' => array(
+						"26.12.2016"),
+		'datum_bis' => array(
+						"06.01.2017"),
 		'faehrt_nicht' => "",
 	);
 

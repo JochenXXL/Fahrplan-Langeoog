@@ -63,7 +63,7 @@
 						"31.10.2016",
 						),
 		'datum_bis' => array(
-						"18.03.2016"
+						"18.03.2017"
 						),
 		'faehrt_nicht' => array (
 						"24.12.2016",
@@ -105,7 +105,7 @@
 		'faehrt_nicht' => "",
 	);
 
-		// Fähre um 8:20 WINTERFAHRPLAN SONDERFAHRT 26.12
+	// Fähre um 8:20 WINTERFAHRPLAN SONDERFAHRT 26.12
 	$fahrplan[] = array(
 		'zeit' => "8:20",
 		'tag' => array (
@@ -115,6 +115,19 @@
 						"26.12.2016"),
 		'datum_bis' => array(
 						"26.12.2016"),
+		'faehrt_nicht' => "",
+	);
+
+	// Fähre um 8:20 SONDERFAHRT NEUHJAHR
+	$fahrplan[] = array(
+		'zeit' => "8:20",
+		'tag' => array (
+				1, 2, 3
+			),
+		'datum_von' => array(
+						"02.01.2017"),
+		'datum_bis' => array(
+						"04.01.2017"),
 		'faehrt_nicht' => "",
 	);
 
@@ -241,6 +254,19 @@
 		'faehrt_nicht' => $faehrt_nicht_am,
 	);
 
+	// Fähre um 12:30 Sonderfahrt
+	$fahrplan[] = array(
+		'zeit' => "12:30",
+		'tag' => array (
+				0, 1, 2
+			),
+		'datum_von' => array(
+						"01.01.2017"),
+		'datum_bis' => array(
+						"03.01.2017"),
+		'faehrt_nicht' => "",
+	);
+
 	// Fähre um 13:30 SOMMERFAHRPLAN
 	$fahrplan[] = array(
 		'zeit' => "13:30",
@@ -280,6 +306,32 @@
 						"31.10.2016"),
 		'datum_bis' => array(
 						"18.03.2017"),
+		'faehrt_nicht' => "",
+	);
+
+	// Fähre um 14:30 Sonderfahrt
+	$fahrplan[] = array(
+		'zeit' => "14:30",
+		'tag' => array (
+				1, 2, 3, 4
+			),
+		'datum_von' => array(
+						"26.12.2016"),
+		'datum_bis' => array(
+						"06.01.2017"),
+		'faehrt_nicht' => "",
+	);
+
+	// Fähre um 14:30 Sonderfahrt 31.01.17
+	$fahrplan[] = array(
+		'zeit' => "14:30",
+		'tag' => array (
+				2
+			),
+		'datum_von' => array(
+						"31.01.2017"),
+		'datum_bis' => array(
+						"31.01.2017"),
 		'faehrt_nicht' => "",
 	);
 
