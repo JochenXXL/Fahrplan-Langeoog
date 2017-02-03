@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   overflow: hidden;
   height: 400px;
+  margin-top: 54px;
+  margin-bottom: 0px;
 }
 
 #jumbofreimuth {
@@ -78,6 +80,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(206, 206, 206);
 }
 
+/* Top Add */
+#add-container-top {
+  margin-top: 54px;
+}
 
 
 /* Right Add */

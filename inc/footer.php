@@ -76,10 +76,19 @@
 	  </div>
   </div> 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+	 WebFont.load({
+	    google: {
+	      families: ['Open Sans:400,700,800']
+	    }
+	  });
+	</script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="jquery/jquery-ui.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
     <script src="jquery/sticky/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <script type="text/javascript">
       window.cookieconsent_options = {"message":"Diese Webseite verwendet Cookies, um Ihnen ein optimales Surf Erlebnis zu gewährleisten","dismiss":"Ay, ay, Käptn","learnMore":"Mehr Informationen","link":"http://fahrplan-langeoog.de/datenschutz.php","theme":"dark-bottom"};
