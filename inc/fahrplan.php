@@ -16,19 +16,24 @@ class fahrplan {
                   		<?php echo $datum; ?> 
                   	</h4> 
               </th>
-        <?php
+    <?php
+
+    $fahrzeiten = [];
 
 		foreach($fahrplan as $fahrt) {
                    if (in_day_range($tag, $fahrt["tag"] ) && 
                        in_date_range($fahrt["datum_von"], $fahrt["datum_bis"],$datum) &&
                        !faehrt_nicht($fahrt["faehrt_nicht"], $datum)){     
-                    
-                        echo "<tr> <td class='text-xs-center'>" . $fahrt["zeit"] . "</td> </tr>";           
+                        array_push($fahrzeiten, $fahrt["zeit"] );           
         			}   
-       	} 
-       	?>
-       	</table>
-       	<?php           
-            
+       	}
+    $fahrzeiten = array_unique($fahrzeiten);           
+    foreach($fahrzeiten as $fahrt) {
+       echo "<tr> <td class='text-xs-center'>" . $fahrt . "</td> </tr>";
+    } 
+   	?>
+   	</table>
+   	<?php
+    
 	}	
 }
