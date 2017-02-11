@@ -154,7 +154,7 @@ function ausfluege($num = NULL){
               <th>Titel</th>
               <th>Datum</th>
               <th>Zeit</th>
-              <th>Ticket</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -168,11 +168,11 @@ function ausfluege($num = NULL){
                 echo '<th scope="row">' . $json[$i]['Titel'] . '</th>';
                 echo '<td>' . $json[$i]['Datum'] . '</th>';
                 echo '<td>' . $json[$i]['Uhrzeit'] . '</th>';
-                if ($json[$i]['Ticket'] != "") {
+/*                if ($json[$i]['Ticket'] != "") {
                     echo '<td>' . '<a href="' . $json[$i]['Ticket'] . '" target="_blank" class="btn btn-success btn-sm">Ticket kaufen</a>' . '</th>';
                 } else {
                     echo '<td></th>';
-                }
+                }*/
                 echo '</tr>';
             }
 
