@@ -21,21 +21,34 @@
           <div class="row">
             <h1 class="text-xs-center p-y-2">Fahrplan Bensersiel</h3>
             <p class="text-xs-center p-b-1">Abfahrtszeiten der Fähre Bensersiel am <?php echo wochentag($tag) .", den " . $datum ?>.</p>
-            <div class="col-md-6">
-              <div class="m-x-auto p-b-3" style="width:270px;">
+            <div class="row">
+              <div class="col-xs-12">
+                 <div class="m-x-auto" style="width:270px;">
+                  <h3 class="text-xs-center">Datum wählen</h3>
                   <div id="datepicker">
                       <?php datepicker_hafen("bensersiel", $datum); ?>  
                   </div>
               </div>
-
+              </div>
             </div>
-            <div class="col-md-6">
-              <?php 
-                $fahrplan = new fahrplan();
-                $fahrplan->fahrplan_html("Bensersiel", $datum);
-              ?>
-            </div>   
-          </div>          
+              <div class="col-md-6">
+                <h3 class="text-xs-center m-t-2">Schiffahrt Langeoog</h3>
+                <?php 
+                  $fahrplan = new fahrplan();
+                  $fahrplan->fahrplan_html("Bensersiel", $datum);
+                ?>
+              </div>
+              <div class="col-md-6">
+                
+                <h3 class="text-xs-center m-t-2">Reederei Freimuth</h3> 
+                <?php
+                  linieFreimuth("bensersiel", $datum);
+                ?>
+                <div class="alert alert-danger" role="alert">
+                  <strong>Achtung!</strong><br /> Wichtige <a href="reederei-freimuth.php" class="alert-link">Informationen</a> zur Reederei Freimuth.
+                </div>
+              </div>   
+          </div>           
 
         <div class="alert alert-info m-t-2 m-b-3" role="alert">
           <?php include("inc/fahrplan_hinweis.php") ?>

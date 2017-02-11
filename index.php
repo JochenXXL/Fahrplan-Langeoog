@@ -15,7 +15,7 @@
       <div class="col col-lg-8 col-lg-pull-4">
 
         <h1 class="text-xs-center p-t-1 p-b-2">Fahrplan Langeoog ( Linie )</h1>
-        <p>Auf Fahrplan-Langeoog.de finden Sie die aktuellen Abfahrtszeiten der Fähre Langeoog, die Abfahrtszeiten für Ausflugsfahrten sowie Informationen zu Charterfahrten von und nach Langeoog. Soweit nicht anders angegeben, gelten die Abfahrtszeiten ab Bensersiel Hafen sowie ab Langeoog Bahnhof. </p>
+        <p>Auf Fahrplan-Langeoog.de finden Sie die aktuellen Abfahrtszeiten der Fähre Langeoog, die Abfahrtszeiten für Ausflugsfahrten sowie Informationen zu Charterfahrten von und nach Langeoog. Soweit nicht anders angegeben, gelten die Abfahrtszeiten der Fähre ab Bensersiel Hafen sowie der Inselbahn ab Langeoog Bahnhof. </p>
         <div class="card-deck-wrapper">
           <div class="card-deck">
             <div class="card">
@@ -51,6 +51,40 @@
 
         <div class="alert alert-info m-t-2 m-b-3" role="alert">
           <?php include("inc/fahrplan_hinweis.php") ?>
+        </div>
+
+        <h2 class="text-xs-center m-t-2 m-b-1">Linie Freimuth</h2>
+        <p>Seit Anfang 2017 führt die <a href="reederei-freimuth.php">Reederei Freimuth</a>  ebenfalls Linienverkehr auf der Strecke Bensersiel-Langeoog und zurück durch. Da nur 12 Plätze verfügbar sind, wird um rechtzeitige Reservierung unter 0151/23788565 gebeten. <a href="reederei-freimuth.php">Mehr Informationen</a></p>
+
+         <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title text-xs-center">ab Langeoog</h3>
+                <p class="card-text">
+                  <?php 
+                    linieFreimuth("langeoog", $datum);
+                  ?>
+                </p>
+                <div class="text-xs-center">
+                  <a href="langeoog.php" class="btn btn-primary">Weitere Abfahrten</a> 
+                </div>             
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title text-xs-center">ab Bensersiel</h3>
+                <p class="card-text">
+                  <?php 
+                    linieFreimuth("bensersiel", $datum);
+                  ?>
+                </p>
+                <div class="text-xs-center">                 
+                  <a href="bensersiel.php" class="btn btn-primary">Weitere Abfahrten</a>
+                </div>                        
+              </div>              
+            </div>
+          </div>
         </div>
 
         <h2 class="text-xs-center m-t-2 m-b-1">Charterfahrten</h2>               
