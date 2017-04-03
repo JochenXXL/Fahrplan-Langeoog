@@ -40,12 +40,12 @@
               </div>
               <div class="col-md-6">
                 
-                <h3 class="text-xs-center m-t-2">Reederei Freimuth</h3> 
+                <h3 class="text-xs-center m-t-2">MS Flinthörn</h3> 
                 <?php
-                  linieFreimuth("bensersiel", $datum);
+                  linieDamwerth("bensersiel", $datum);
                 ?>
                 <div class="alert alert-danger" role="alert">
-                  <strong>Achtung!</strong><br /> Wichtige <a href="reederei-freimuth.php" class="alert-link">Informationen</a> zur Reederei Freimuth.
+                  <strong>Achtung!</strong><br /> Der Liegeplatz der MS Flinthörn befindet sich in Bensersiel hinter dem Sieltor gegenüber der Bushaltestelle.
                 </div>
               </div>   
           </div>           

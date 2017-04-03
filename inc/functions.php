@@ -195,11 +195,45 @@ function linieFreimuth($hafen, $datum) {
 
     for ($i=0; $i < $counter; $i++) { 
         if ($json[$i] != NULL) {
-            if (strtotime($json[$i]['datum_von']) <= strtotime(date("d.m.Y")) && strtotime($json[$i]['datum_bis']) >= strtotime(date("d.m.Y"))) {
+            if (strtotime($json[$i]['datum_von']) <= strtotime($datum) && strtotime($json[$i]['datum_bis']) >= strtotime($datum)) {
                 foreach ($json[$i]["fahrten"] as $fahrt) {
                     if (in_day_range($tag, $fahrt["tag"])) {
                         foreach ($fahrt["zeit"] as $fahrzeit) {
                             $html .= "<tr><td class='text-xs-center'>" . $fahrzeit . "</td></tr>";
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    $html .= "</table>";
+                
+    echo $html;  
+}
+
+function linieDamwerth($hafen, $datum) {
+    $data = file_get_contents("inc/damwerth_" . $hafen . ".json");
+    $json = json_decode($data, true);
+    $counter = count($json);
+    $tag = date("w", strtotime($datum));
+
+    $html = "<table class='table table-bordered table-striped'>
+              <th><h4 class='text-xs-center'>";
+    $html .= $datum; 
+    $html .= "</h4></th>";
+
+    for ($i=0; $i < $counter; $i++) { 
+        if ($json[$i] != NULL) {
+            if (strtotime($json[$i]['datum_von']) <= strtotime($datum) && strtotime($json[$i]['datum_bis']) >= strtotime($datum)) {
+                foreach ($json[$i]["fahrten"] as $fahrt) {
+                    if (in_day_range($tag, $fahrt["tag"])) {
+                        $count = 0;
+                        foreach ($fahrt["zeit"] as $fahrzeit) {
+                            $html .= "<tr><td class='text-xs-center'>" . $fahrzeit . " " . $fahrt["hafen"][$count] . "</td></tr>";
+                            $count += 1;
                         }
 
                     }

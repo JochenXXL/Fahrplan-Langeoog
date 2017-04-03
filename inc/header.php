@@ -52,9 +52,10 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Charter</a>
               <div class="dropdown-menu">
+                <a <?php if ($site_id == 6) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="reederei-damwerth.php">Reederei Damwerth</a>
                 <a <?php if ($site_id == 5) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="reederei-freimuth.php">Reederei Freimuth</a>
-                <!--<a <?php if ($site_id == 6) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="reederei-damwerth.php">Reederei Damwerth</a>
-                <a <?php if ($site_id == 7) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="inseltaxi-langeoog.php">Inseltaxi Langeoog</a> -->
+
+               <!-- <a <?php if ($site_id == 7) {echo "class='dropdown-item active'";} else {echo "class='dropdown-item'";}?> href="inseltaxi-langeoog.php">Inseltaxi Langeoog</a> -->
               </div>
             </li>
             <li class="nav-item">

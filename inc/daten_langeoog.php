@@ -206,6 +206,21 @@
 		'faehrt_nicht' => $feiertage,
 	);
 
+	// SONDERFAHRT um 10:45 ZWISCHEN
+	$fahrplan[] = array(
+		'zeit' => "10:45",
+		'tag' => array (
+				1, 2, 3, 4, 5, 6, 0
+			),
+		'datum_von' => array(
+						"15.04.2017",
+						"22.04.2017"),
+		'datum_bis' => array(
+						"15.04.2017",
+						"22.04.2017"),
+		'faehrt_nicht' => "",
+	);
+
 
 
 	// Fähre um 11:30 ZWISCHENFAHRPLAN
@@ -412,6 +427,27 @@
 			),
 		'datum_von' => $feiertage,
 		'datum_bis' => $feiertage,
+		'faehrt_nicht' => "",
+	);
+
+	// Fähre um 20:00 ZWISCHEN SONDERFAHRTEN
+	$fahrplan[] = array(
+		'zeit' => "20:00",
+		'tag' => array (
+				0, 1, 2, 3, 4, 5, 6
+			),
+		'datum_von' => array(
+						"13.04.2017",
+						"17.04.2017",
+						"24.05.2017",
+						"14.06.2017"
+						),
+		'datum_bis' => array(
+						"13.04.2017",
+						"17.04.2017",
+						"24.05.2017",
+						"14.06.2017"
+						),
 		'faehrt_nicht' => "",
 	);
 

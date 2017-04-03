@@ -122,6 +122,27 @@
 		'faehrt_nicht' => "",
 	);
 
+	// SONDERFAHRTEN um 8:20 ZWISCHEN
+	$fahrplan[] = array(
+		'zeit' => "8:20",
+		'tag' => array (
+				1, 2, 3, 4, 5, 6, 0
+			),
+		'datum_von' => array(
+						"07.04.2017",
+						"14.04.2017",
+						"16.04.2017",
+						"21.04.2017"
+						),
+		'datum_bis' => array(
+						"09.04.2017",
+						"15.04.2017",
+						"17.04.2017",
+						"23.04.2017"
+						),
+		'faehrt_nicht' => "",
+	);
+
 
 	// Fähre um 9:30 WINTER, ZWISCHEN, SOMMER
 	$fahrplan[] = array(
@@ -133,6 +154,21 @@
 						"31.10.2016"),
 		'datum_bis' => array(
 						"31.03.2018"),
+		'faehrt_nicht' => "",
+	);
+
+	// SONDERFAHRT um 10:45 ZWISCHEN
+	$fahrplan[] = array(
+		'zeit' => "10:45",
+		'tag' => array (
+				1, 2, 3, 4, 5, 6, 0
+			),
+		'datum_von' => array(
+						"15.04.2017",
+						"22.04.2017"),
+		'datum_bis' => array(
+						"15.04.2017",
+						"22.04.2017"),
 		'faehrt_nicht' => "",
 	);
 
@@ -300,6 +336,23 @@
 			),
 		'datum_von' => $faehrt_auch_am,
 		'datum_bis' => $faehrt_auch_am,
+		'faehrt_nicht' =>"",
+	);
+
+		// Fähre um 19:30 ZWISCHEN SONDERFAHRTEN
+	$fahrplan[] = array(
+		'zeit' => "19:30",
+		'tag' => array (
+				1, 2, 3, 4, 5, 6, 0
+			),
+		'datum_von' => array(
+						"13.04.2017",
+						"24.05.2017",
+						"14.06.2017"),
+		'datum_bis' => array(
+						"13.04.2017",
+						"24.05.2017",
+						"14.06.2017"),
 		'faehrt_nicht' =>"",
 	);
 

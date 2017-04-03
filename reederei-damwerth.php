@@ -1,6 +1,6 @@
 <?php
     $site_title = "Reederei Damwerth";
-    $site_id = 5;
+    $site_id = 6;
     $site_description = "Langeoog Charter Reederei Damwerth. Ausflugs- und Erlebnisfahrten";
 
     include("inc/header.php");
@@ -10,43 +10,41 @@
   <div class="col col-lg-8 col-lg-pull-4">
     <h1 class="text-xs-center p-y-2">Reederei Damwerth</h1>
     
-    <div class="jumbotron" id="jumbofreimuth">
+    <div class="jumbotron" id="jumbodamwerth">
       <div class="container">
     </div>
     
     </div>
     <p>
-      Die Reederei Freimuth bringt Sie mit dem Schiff "Lili Marleen" dort hin, wo Sie möchten. Egal, ob Sie vom Festland aus nach Langeoog, oder von Langeoog zurück ans Land fahren möchten - mit der "Lili Marleen" fahren Sie flexibel, schnell und günstig. Je nach Witterung und Tidenstand beträgt die Fahrzeit zwischen dem Hafen von Bensersiel und dem Hafen Langeoog etwa 35 Minuten.
+      Die Reederei Damwerth bietet mit seinem Schiff MS Flinthörn eine große Anzahl an spannenden Ausflugsfahrten für Groß und Klein sowie individuelle Charterfahrten auf Langeoog an. Die Fahrten finden hauptsächlich zwischen Juni und Oktober statt.
     </p>
     <p>
-      Auf der "Lili Marleen" finden bis zu 12 Passagiere in stilvollem Ambiente Platz. Das Gepäck sowie mitgebrachte Fahrräder können geschützt vor Wind und Wetter bequem unter Deck verstaut werden.
+      Die MS Flinthörn kann für Hochzeitsfahrten, Familienfeiern, Jubiläen, Betriebsfeiern, Seebestattungen sowie vieles weitere gechartert werden. Die Reederei Damwerth ist offen für weitere Ideen und Wünsche.  
     </p>
 
-    <h2 class="p-t-2">Preise</h2>
+    <h2 class="p-t-2">Preise für Linienfahrten</h2>
     <p>
-      Der Gesamtpreis pro einfacher Fahrt beträgt: <strong>240,00 € inkl. Steuern und Gebühren</strong>.</br>
-      Dies beinhaltet die Überfahrt für bis zu 12 Personen <strong>inkl. Gepäck</strong>. (Entspricht einem Preis pro Person von 20,00 €).
+      Seit dem ersten April 2017 bietet die Reederei Damwerth regelmäßige Linienfahrten von Bensersiel nach Langeog und zurück an.
+      Der Preis für eine Tagesfahrt beträgt für Erwachsene <strong>18€</strong> sowie 9€ für Kinder.</br>
+      Das Ticket für längere Aufenthalte auf der Insel kostet <strong>20€</strong> für Erwachsene sowie 12€ für Kinder.
     </p>
     <p>
-      Jedes weitere Gepäckstück: 5,00 €  </br>
-      <strong>Hunde: gratis</strong>
+      Interessant für Hundebesitzer: Hunde kosten <strong>nur 9€</strong> (Tagesfahrt) bzw. 12€ (Mehrtägiger Aufenthalt).
     </p>
+
     <div class="alert alert-info" role="alert">
-      Bei dieser Fahrt können bis zu 12 Personen inkl. Handgepäck befördert werden. Außerdem besteht die Möglichkeit, pro Person ein weiteres Gepäckstück bis 25kg (Reisekoffer, Fahrrad, etc.) <strong>unentgeldlich</strong> an Bord zu nehmen.
+      Der Liegeplatz der MS Flinthörn befindet sich in Bensersiel kurz hinter dem Sieltor gegenüber der Bushaltestelle.
     </div>
     <h3 class="p-t-2">Buchung</h3>
-    <p>Wenn Sie eine Fahrt mit der "Lili Marleen" buchen möchten, wenden Sie sich direkt an die Reederei Freimuth:</p>
+    <p>Die Fahrten mit der MS Flinthörn können entweder direkt vor Ort gezahlt werden oder vorab über die Inselinfo im Ort gebucht werden. Für weitere Fragen wenden Sie sich direkt an die Reederei Damwerth.</p>
     <dl class="row">
       <dt class="col-sm-3">Tel.:</dt>
-      <dd class="col-sm-9">04971 925842</dd>
+      <dd class="col-sm-9">04972 9907070</dd>
       <dt class="col-sm-3">Email.:</dt>
-      <dd class="col-sm-9"><a href="mailto:info@reederei-freimuth.de">info@reederei-freimuth.de</a></dd>
+      <dd class="col-sm-9"><a href="mailto:info@ms-flinthoern.de">info@ms-flinthoern.de</a></dd>
       <dt class="col-sm-3">Homepage:</dt>
-      <dd class="col-sm-9"><a href="http://www.reederei-freimuth.de" target="_blank">http://www.reederei-freimuth.de</a></dd>  
+      <dd class="col-sm-9"><a href="http://www.ms-flinthoern.de" target="_blank">http://www.ms-flinthoern.de</a></dd>  
     </dl>
-    <div class="alert alert-danger m-b-2" role="alert">
-      Bitte beachten Sie, dass unsere Fahrten mindestens 3 Tage im voraus gebucht werden müssen. Spontane Buchungen sind leider nicht möglich. 
-    </div>
 
   </div>
 

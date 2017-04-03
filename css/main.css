@@ -37,6 +37,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 200px;
 }
 
+#jumbodamwerth {
+  background: #000 url("../img/Reederei_Damwerth_jumbo.jpg") center center; 
+    position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  height: 200px;
+}
+
 
 /* Responsive Navbar Update */
 

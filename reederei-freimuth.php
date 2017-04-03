@@ -22,6 +22,7 @@
       Auf der "Lili Marleen" finden bis zu 12 Passagiere in stilvollem Ambiente Platz. Das Gepäck sowie mitgebrachte Fahrräder können geschützt vor Wind und Wetter bequem unter Deck verstaut werden.
     </p>
 
+    <!--
     <h2 class="p-t-2" id="linie">Linie</h2>
     <p>Die Reederei Freimuth führt seit Anfang 2017 regelmäßigen Linienverkehr von Bensersiel nach Langeoog und zurück durch.</p>
     <div class="alert alert-danger" role="alert">
@@ -50,7 +51,7 @@
     <div class="alert alert-danger m-b-2" role="alert">
       Bitte beachten Sie, dass Charter Fahrten der Reederei Freimuth mindestens 3 Tage im voraus gebucht werden müssen. "Spontane" Buchungen sind leider nicht möglich. 
     </div>
-
+    -->
     <h3 class="p-t-2">Buchung</h3>
     <p>Wenn Sie eine Fahrt mit der "Lili Marleen" buchen möchten, wenden Sie sich direkt an die Reederei Freimuth:</p>
     <dl class="row">

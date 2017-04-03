@@ -40,12 +40,12 @@
               </div>
               <div class="col-md-6">
                 
-                <h3 class="text-xs-center m-t-2">Reederei Freimuth</h3> 
+                <h3 class="text-xs-center m-t-2">MS Flinthörn</h3> 
                 <?php
-                  linieFreimuth("langeoog", $datum);
+                  linieDamwerth("langeoog", $datum);
                 ?>
                 <div class="alert alert-danger" role="alert">
-                  <strong>Achtung!</strong><br /> Wichtige <a href="reederei-freimuth.php#linie" class="alert-link">Informationen</a> zur Reederei Freimuth.
+                  <strong>Achtung!</strong><br /> Bitte beachten Sie, ob der Abfahrtszeit der MS FLienthörn ab Langeoog Bahnhof oder Langeoog Hafen gilt.
                 </div>
               </div>   
           </div>          
