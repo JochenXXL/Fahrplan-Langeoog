@@ -1,5 +1,5 @@
     <?php
-      $site_title = "Fahrplan Langeoog | Abfahrtszeiten Fähre Langeoog";
+      $site_title = "Fahrplan Fähre Langeoog | Abfahrtszeiten Fähre Langeoog";
       $site_id = 1;
       $site_description = "Fahrplan Langeoog - einfach und schnell die Abfahrtszeiten der Fähre Langeoog und Fähre Bensersiel erfahren.";
 
@@ -135,7 +135,7 @@
                   <h4 class="card-title">Reederei Damwerth</h4>
                   <p class="card-text">Schiffsausflüge und Erlebnisfahrten in familiärer Atmosphäre mit der MS Flinthörn. </p>
                   <div class="text-xs-center">
-                    <a href="bensersiel.php" class="btn btn-primary">mehr erfahren</a>
+                    <a href="reederei-damwerth.php" class="btn btn-primary">mehr erfahren</a>
                   </div> 
                 </div>
               </div>

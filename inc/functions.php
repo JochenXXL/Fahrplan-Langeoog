@@ -65,13 +65,13 @@ function datepicker_hafen($hafen, $datum){
         $(function(){
 
 
-          $.datepicker.setDefaults( $.datepicker.regional[ 'fr' ] );
+          $.datepicker.setDefaults( $.datepicker.regional[ 'de' ] );
 
           $('#datepicker').datepicker({
               dateFormat: 'dd.mm.yy',
               defaultDate: '" . $datum . "',
               minDate: 0,
-              maxDate: '31.03.2018',
+              maxDate: '01.01.2019',
               firstDay: 1,
               onSelect: function(dateText) {
                 $(this).change();

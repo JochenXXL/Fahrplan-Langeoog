@@ -157,18 +157,16 @@
 		'faehrt_nicht' => "",
 	);
 
-	// SONDERFAHRT um 10:45 ZWISCHEN
+	// SONDERFAHRT um 10:30 ZWISCHEN
 	$fahrplan[] = array(
-		'zeit' => "10:45",
+		'zeit' => "10:30",
 		'tag' => array (
 				1, 2, 3, 4, 5, 6, 0
 			),
 		'datum_von' => array(
-						"15.04.2017",
-						"22.04.2017"),
+						"19.08.2017"),
 		'datum_bis' => array(
-						"15.04.2017",
-						"22.04.2017"),
+						"20.08.2017"),
 		'faehrt_nicht' => "",
 	);
 

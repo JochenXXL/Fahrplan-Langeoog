@@ -45,7 +45,7 @@
                   linieDamwerth("langeoog", $datum);
                 ?>
                 <div class="alert alert-danger" role="alert">
-                  <strong>Achtung!</strong><br /> Bitte beachten Sie, ob der Abfahrtszeit der MS FLienthörn ab Langeoog Bahnhof oder Langeoog Hafen gilt.
+                  <strong>Achtung!</strong><br /> Bitte beachten Sie, ob die Abfahrtszeit der MS Flinthörn ab Langeoog Bahnhof oder Langeoog Hafen gilt.
                 </div>
               </div>   
           </div>          
