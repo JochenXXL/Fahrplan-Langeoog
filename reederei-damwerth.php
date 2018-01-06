@@ -31,6 +31,7 @@
     <p>
       Interessant für Hundebesitzer: Hunde kosten <strong>nur 9€</strong> (Tagesfahrt) bzw. 12€ (Mehrtägiger Aufenthalt).
     </p>
+    <p>Insulaner erhalten einen Rabatt von 50% auf alle Fahrpreise.</p>
 
     <div class="alert alert-info" role="alert">
       Der Liegeplatz der MS Flinthörn befindet sich in Bensersiel kurz hinter dem Sieltor gegenüber der Bushaltestelle.
