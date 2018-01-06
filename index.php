@@ -156,7 +156,7 @@
         </div>     
 
 
-        <h2 class="text-xs-center m-t-3 m-b-1">Ausflüge</h2>
+<!--         <h2 class="text-xs-center m-t-3 m-b-1">Ausflüge</h2>
         <p>Soweit nicht anders angegeben, gelten die Abfahrtszeiten ab Langeoog Bahnhof.</p>
         <div class="row m-b-2">
           <div class="col col-sm-12">  
@@ -164,10 +164,8 @@
           </div>
           <div class="text-xs-center">                 
             <a href="ausfluege-langeoog.php" class="btn btn-primary">Weitere Ausflüge</a>
-          </div> 
-
-          
-        </div> 
+          </div>           
+        </div>  -->
 
       </div>
 
