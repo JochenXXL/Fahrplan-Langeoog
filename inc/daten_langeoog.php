@@ -1,5 +1,5 @@
 <?php
-	
+
 	// Ausnahme *1
 	$faehrt_nicht_am = array(
 			"14.04.2017",
