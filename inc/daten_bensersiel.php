@@ -214,9 +214,9 @@
 				1, 2, 3, 4, 5, 6, 0
 			),
 		'datum_von' => array(
-						"19.08.2017"),
+						"12.02.2018"),
 		'datum_bis' => array(
-						"20.08.2017"),
+						"13.02.2018"),
 		'faehrt_nicht' => "",
 	);
 
@@ -296,7 +296,9 @@
 						"04.05.2018",
 						"05.11.2018"
 						),
-		'faehrt_nicht' => "",
+		'faehrt_nicht' => array(
+						"28.02.2018"
+		),
 	);
 
 /*	// Fähre um 15:30 SONDERFHART WEIHNACHTEN
