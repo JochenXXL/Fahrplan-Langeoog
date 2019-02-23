@@ -26,10 +26,7 @@
 							    <a class="nav-link" href="datenschutz.php">Datenschutz</a>
 							  </li>
 							  <li class="nav-item">
-							    <a class="nav-link" href="disclaimer.php">Disclaimer</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-link" href="http://i-modich.de/kontakt/" target="_blank">Kontakt</a>
+							    <a class="nav-link" href="https://i-modich.de/kontakt/" target="_blank">Kontakt</a>
 							  </li>
 							</ul>
 						</div>
@@ -95,6 +92,18 @@
     </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
     <!-- Google Analytics -->
+		<script type="text/javascript">
+		var gaProperty = 'UA-XXXXXXX-X';
+		var disableStr = 'ga-disable-' + gaProperty;
+		if (document.cookie.indexOf(disableStr + '=true') > -1) {
+		window[disableStr] = true;
+		}
+		function gaOptout() {
+		document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+		window[disableStr] = true;
+		alert('Das Tracking durch Google Analytics wurde in Ihrem Browser für diese Website deaktiviert.');
+		}
+		</script>
     <?php  include_once("inc/analyticstracking.php") ?> 
   </body>
 </html>

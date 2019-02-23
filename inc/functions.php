@@ -71,7 +71,7 @@ function datepicker_hafen($hafen, $datum){
               dateFormat: 'dd.mm.yy',
               defaultDate: '" . $datum . "',
               minDate: 0,
-              maxDate: '01.01.2019',
+              maxDate: '27.10.2019',
               firstDay: 1,
               onSelect: function(dateText) {
                 $(this).change();
@@ -229,7 +229,7 @@ function linieDamwerth($hafen, $datum) {
         if ($json[$i] != NULL) {
             if (strtotime($json[$i]['datum_von']) <= strtotime($datum) && strtotime($json[$i]['datum_bis']) >= strtotime($datum)) {
                 foreach ($json[$i]["fahrten"] as $fahrt) {
-                    if (in_day_range($tag, $fahrt["tag"])) {
+                    if (in_day_range($tag, $fahrt["tag"]) && ($fahrt["faehrt_nicht"] !== $datum)) {
                         $count = 0;
                         foreach ($fahrt["zeit"] as $fahrzeit) {
                             $html .= "<tr><td class='text-xs-center'>" . $fahrzeit . " " . $fahrt["hafen"][$count] . "</td></tr>";

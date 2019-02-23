@@ -80,7 +80,7 @@ function getTripsFlinthoern($hafen, $datum) {
         if ($json[$i] != NULL) {
             if (strtotime($json[$i]['datum_von']) <= strtotime($datum) && strtotime($json[$i]['datum_bis']) >= strtotime($datum)) {
                 foreach ($json[$i]["fahrten"] as $fahrt) {
-                    if (in_day_range($tag, $fahrt["tag"])) {
+                    if (in_day_range($tag, $fahrt["tag"]) && ($fahrt["faehrt_nicht"] !== $datum)) {
                         $count = 0;
                         foreach ($fahrt["zeit"] as $fahrzeit) {
                             array_push($trips, $fahrzeit );
