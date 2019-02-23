@@ -50,4 +50,4 @@
 RewriteEngine On
 RewriteRule "^/\.well-known/acme-challenge" - [L]
 RewriteCond %{HTTP_HOST} ^www\.fahrplan-langeoog\.de$ [NC]
-RewriteRule ^(.*)$ http://fahrplan-langeoog.de/$1 [L,R=301]
+RewriteRule ^(.*)$ https://fahrplan-langeoog.de/$1 [L,R=301]
